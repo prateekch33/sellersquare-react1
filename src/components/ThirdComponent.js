@@ -4,7 +4,7 @@ import Fields from "./Fields";
 function ThirdComponent() {
   const [result, setResult] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/readdata`, {
+    fetch(`https://sellersquare-nodejs2.vercel.app/readdata`, {
       method: "GET",
       headers: {
         "Content-Type": "aplication/json",
@@ -26,7 +26,7 @@ function ThirdComponent() {
     <>
       <div className="show-details">
         <span>
-          Fetches Data From the NodeJs CRUD API that I have submitted.
+          Fetches Data From the NodeJs CRUD API that I have submitted. <a href="https://sellersquare-nodejs2.vercel.app/">https://sellersquare-nodejs2.vercel.app/</a>
         </span>
         <div className="fields heading">
           <div className="field">Name</div>
